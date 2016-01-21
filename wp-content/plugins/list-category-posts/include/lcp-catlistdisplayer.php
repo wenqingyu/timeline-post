@@ -76,7 +76,7 @@ class CatListDisplayer {
       endif;
     endforeach;
     
-    $this->lcp_output .= $tplFileName;
+    $this->lcp_output .= "<h1>".$tplFileName."</h1>";
     
 
     if($tplFileName){
