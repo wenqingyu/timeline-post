@@ -12,7 +12,7 @@ class CatListDisplayer {
   private $lcp_output;
 
   public static function getTemplatePaths(){
-    $template_path = TEMPLATEPATH . "/list-category-posts/templates/";
+    $template_path = TEMPLATEPATH . "/list-category-posts/";
     $stylesheet_path = STYLESHEETPATH . "/list-category-posts/";
     return array($template_path, $stylesheet_path);
   }
