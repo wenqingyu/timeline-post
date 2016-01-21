@@ -68,7 +68,7 @@ class CatListDisplayer {
         $templates[] = $path . $template_param . '.php';
       }
     }
-
+    $tplFileName = $path . "default.php";
     // Check if we can read the template file:
     foreach ($templates as $file) :
       if ( is_file($file) && is_readable($file) ) :
