@@ -106,6 +106,8 @@ class CatListDisplayer {
     $this->category_title();
 
     $this->get_category_description();
+    
+    $this->lcp_output .= "<s>test</s>";
 
     $this->lcp_output .= '<' . $tag;
 
