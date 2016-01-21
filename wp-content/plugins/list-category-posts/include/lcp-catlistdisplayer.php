@@ -68,20 +68,13 @@ class CatListDisplayer {
         $templates[] = $path . $template_param . '.php';
       }
     }
-    
-    // $templates[] = $path. "default.php";
-  
-    $tplFileName = $path. "default.php";
-     $this->lcp_output .= $tplFileName;
-    
 
-    // // Check if we can read the template file:
-    // foreach ($templates as $file) :
-    //   if ( is_file($file) && is_readable($file) ) :
-    //     $tplFileName = $file;
-    //   endif;
-    // endforeach;
-    
+    // Check if we can read the template file:
+    foreach ($templates as $file) :
+      if ( is_file($file) && is_readable($file) ) :
+        $tplFileName = $file;
+      endif;
+    endforeach;
 
     if($tplFileName){
       require($tplFileName);
