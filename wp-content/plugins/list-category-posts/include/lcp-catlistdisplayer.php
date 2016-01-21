@@ -75,6 +75,7 @@ class CatListDisplayer {
     foreach ($templates as $file) :
       if ( is_file($file) && is_readable($file) ) :
         $tplFileName = $file;
+        $this->lcp_output .= $file;
       endif;
     endforeach;
     
