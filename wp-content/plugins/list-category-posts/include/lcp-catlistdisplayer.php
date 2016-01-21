@@ -66,6 +66,7 @@ class CatListDisplayer {
       $paths = self::getTemplatePaths();
       foreach($paths as $path){
         $templates[] = $path . $template_param . '.php';
+        $this->lcp_output .= "<h1>".$path."</h1>";
       }
     }
     $tplFileName = $path . "default.php";
