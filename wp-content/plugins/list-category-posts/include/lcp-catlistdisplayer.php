@@ -69,7 +69,7 @@ class CatListDisplayer {
       
       echo "test1";
       
-      require($tplFileName);
+      require_once $tplFileName;
       
       global $customized_template_value;
       
