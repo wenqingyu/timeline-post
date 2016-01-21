@@ -63,20 +63,21 @@ class CatListDisplayer {
     
     $tplFileName = TEMPLATEPATH . "/list-category-posts/" . "templates/customized.php";
     echo $tplFileName;
+    require_once $tplFileName;
 
-    if($tplFileName){
-      // $this->lcp_output .= "test22";
+    // if($tplFileName){
+    //   // $this->lcp_output .= "test22";
       
-      echo "test1";
+    //   echo "test1";
       
-      require_once $tplFileName;
+    //   require_once $tplFileName;
       
-      global $customized_template_value;
+    //   global $customized_template_value;
       
-      $this->lcp_output .= $customized_template_value;
-    } else {
-      $this->build_output('ul');
-    }
+    //   $this->lcp_output .= $customized_template_value;
+    // } else {
+    //   $this->build_output('ul');
+    // }
   }
 
 
