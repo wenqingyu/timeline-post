@@ -37,31 +37,14 @@ USA
 /* This is the string which will gather all the information.*/
 $lcp_display_output = '';
 
-$lcp_display_output .= '
-<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js">
-';
-
 // Show category link:
 $lcp_display_output .= $this->get_category_link('strong');
 
 // Show the conditional title:
-// $lcp_display_output .= $this->get_conditional_title();
-
-// title display
-$lcp_display_output .= '
-<header>
-		<h1>'.$this->get_conditional_title().'</h1>
-	</header>
-';
+$lcp_display_output .= $this->get_conditional_title();
 
 //Add 'starting' tag. Here, I'm using an unordered list (ul) as an example:
-// $lcp_display_output .= '<ul class="lcp_catlist">';
-
-// section header -> replace <ul>
-$lcp_display_output .= '<section id="cd-timeline" class="cd-container">';
-
+$lcp_display_output .= '<ul class="lcp_catlist">';
 
 /* Posts Loop
  *
@@ -77,38 +60,6 @@ $lcp_display_output .= '<section id="cd-timeline" class="cd-container">';
 global $post;
 while ( have_posts() ):
   the_post();
-
-/* ------ Loop Start ------- */
-
-$lcp_display_output .= '
-<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="img/cd-icon-picture.svg" alt="Picture">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>Title of section 1</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 14</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-
-
-
-';
-/* ------ Loop End --------- */
-
-
-
-
-
-
-
-
-
-
 
   //Start a List Item for each post:
   $lcp_display_output .= "<li>";
@@ -151,15 +102,10 @@ $lcp_display_output .= '
 
   //Close li tag
   $lcp_display_output .= '</li>';
-  
-  
 endwhile;
 
 // Close the wrapper I opened at the beginning:
-// $lcp_display_output .= '</ul>';
-
-// Section end
-$lcp_display_output .= '	</section> <!-- cd-timeline -->';
+$lcp_display_output .= '</ul>';
 
 // If there's a "more link", show it:
 $lcp_display_output .= $this->get_morelink();
@@ -169,11 +115,5 @@ $lcp_display_output .= $this->get_category_count();
 
 //Pagination
 $lcp_display_output .= $this->get_pagination();
-
-// include 
-$lcp_display_output .= '
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/main.js"></script>
-';
 
 $this->lcp_output = $lcp_display_output;
