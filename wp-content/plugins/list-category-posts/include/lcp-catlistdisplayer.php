@@ -46,6 +46,7 @@ class CatListDisplayer {
       }
     } else {
       // Default:
+              $this->lcp_output .= "test1";
               $this->template();
       // $this->build_output('ul');
     }
@@ -109,6 +110,8 @@ class CatListDisplayer {
     $this->get_category_description();
 
     $this->lcp_output .= '<' . $tag;
+    
+    $this->lcp_output .= "haha";
 
     // Follow the numner of posts in an ordered list with pagination
     if( $tag == 'ol' && $this->catlist->get_page() > 1 ){
