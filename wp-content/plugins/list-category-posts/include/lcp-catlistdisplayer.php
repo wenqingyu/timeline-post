@@ -66,6 +66,9 @@ class CatListDisplayer {
 
     if($tplFileName){
       // $this->lcp_output .= "test22";
+      
+      echo "test1";
+      
       require($tplFileName);
       
       global $customized_template_value;
