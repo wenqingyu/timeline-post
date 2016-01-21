@@ -75,6 +75,8 @@ class CatListDisplayer {
         $tplFileName = $file;
       endif;
     endforeach;
+    
+    $this->lcp_output .= "not foreach";
 
     if($tplFileName){
       require($tplFileName);
