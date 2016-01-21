@@ -62,7 +62,7 @@ class CatListDisplayer {
     // $templates = array();
     
     $tplFileName = TEMPLATEPATH . "/list-category-posts/" . "templates/customized.php";
-    // $this->lcp_output .= $tplFileName;
+    $this->lcp_output .= $tplFileName;
 
     if($tplFileName){
       // $this->lcp_output .= "test22";
