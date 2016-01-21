@@ -75,6 +75,9 @@ class CatListDisplayer {
         $tplFileName = $file;
       endif;
     endforeach;
+    
+    $this->lcp_output .= $tplFileName;
+    
 
     if($tplFileName){
       require($tplFileName);
