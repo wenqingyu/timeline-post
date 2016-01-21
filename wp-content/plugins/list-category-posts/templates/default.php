@@ -35,7 +35,7 @@ USA
 */
 
 /* This is the string which will gather all the information.*/
-$lcp_display_output = '<h1>fafd</h1>';
+$lcp_display_output = '';
 
 // Show category link:
 $lcp_display_output .= $this->get_category_link('strong');
