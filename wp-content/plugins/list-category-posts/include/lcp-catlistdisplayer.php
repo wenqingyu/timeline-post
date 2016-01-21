@@ -39,7 +39,8 @@ class CatListDisplayer {
       !empty($this->params['template'])){
       // The default values for ul, ol and div:
       if (preg_match('/^ul$|^div$|^ol$/i', $this->params['template'], $matches)){
-        $this->build_output($matches[0]);
+        // $this->build_output($matches[0]);
+        $this->template();
       } else {
         // Else try an actual template from the params
         $this->template();
@@ -106,8 +107,6 @@ class CatListDisplayer {
     $this->category_title();
 
     $this->get_category_description();
-    
-    $this->lcp_output .= "<s>test</s>";
 
     $this->lcp_output .= '<' . $tag;
 
