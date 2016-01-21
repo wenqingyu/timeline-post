@@ -46,7 +46,7 @@ class CatListDisplayer {
       }
     } else {
       // Default:
-      $this->lcp_output .= "TEST1";
+      // $this->lcp_output .= "TEST1";
       $this->load_myTemplate();
       // $this->build_output('ul');
     }
@@ -62,14 +62,12 @@ class CatListDisplayer {
     // $templates = array();
     
     $tplFileName = TEMPLATEPATH . "/list-category-posts/" . "templates/default.php";
-    $this->lcp_output .= $tplFileName;
+    // $this->lcp_output .= $tplFileName;
 
     if($tplFileName){
-       $this->lcp_output .= "test22";
-      // require($tplFileName);
+      // $this->lcp_output .= "test22";
+      require($tplFileName);
     } else {
-      
-       $this->lcp_output .= "test2fault";
       $this->build_output('ul');
     }
   }
