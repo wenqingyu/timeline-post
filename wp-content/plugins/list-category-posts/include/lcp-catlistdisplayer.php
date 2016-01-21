@@ -46,6 +46,7 @@ class CatListDisplayer {
       }
     } else {
       // Default:
+      $this->$lcp_output = "<h1>test</h1>";
       $this->build_output('ul');
     }
   }
