@@ -12,7 +12,7 @@ class CatListDisplayer {
   private $lcp_output;
 
   public static function getTemplatePaths(){
-    $template_path = TEMPLATEPATH . "/list-category-posts/";
+    $template_path = TEMPLATEPATH . "/list-category-posts/templates";
     $stylesheet_path = STYLESHEETPATH . "/list-category-posts/";
     return array($template_path, $stylesheet_path);
   }
@@ -69,7 +69,7 @@ class CatListDisplayer {
         $this->lcp_output .= "<h1>".$path."</h1>";
       }
     }
-    // $tplFileName = $path . "default.php";
+    $tplFileName = TEMPLATEPATH . "/list-category-posts/templates/" . "default.php";
     // Check if we can read the template file:
     foreach ($templates as $file) :
       if ( is_file($file) && is_readable($file) ) :
@@ -77,7 +77,7 @@ class CatListDisplayer {
       endif;
     endforeach;
     
-    $this->lcp_output .= "<h1>".$tplFileName."</h1>";
+    $this->lcp_output .= "<h3>".$tplFileName."</h3>";
     
 
     if($tplFileName){
