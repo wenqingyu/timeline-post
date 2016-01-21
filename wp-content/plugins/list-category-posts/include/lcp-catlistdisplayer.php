@@ -61,7 +61,7 @@ class CatListDisplayer {
     // $template_param = $this->params['template'];
     // $templates = array();
     
-    $tplFileName = $template_path . "templates/default.php";
+    $tplFileName = TEMPLATEPATH . "/list-category-posts/" . "templates/default.php";
     $this->lcp_output .= $tplFileName;
 
     if($tplFileName){
