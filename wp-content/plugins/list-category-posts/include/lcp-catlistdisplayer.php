@@ -47,9 +47,33 @@ class CatListDisplayer {
     } else {
       // Default:
       $this->lcp_output .= "TEST1";
+      $this->load_myTemplate();
+      // $this->build_output('ul');
+    }
+  }
+  
+  
+  /**
+   * Customized Template code
+   */
+  private function load_myTemplate(){
+    $tplFileName = null;
+    // $template_param = $this->params['template'];
+    // $templates = array();
+    
+    $tplFileName = $template_path . "templates/default.php";
+    $this->lcp_output .= $tplFileName;
+
+    if($tplFileName){
+       $this->lcp_output .= "test22";
+      // require($tplFileName);
+    } else {
+      
+       $this->lcp_output .= "test2fault";
       $this->build_output('ul');
     }
   }
+
 
   /**
    * Template code
