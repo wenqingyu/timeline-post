@@ -72,11 +72,11 @@ class CatListDisplayer {
     // Check if we can read the template file:
     foreach ($templates as $file) :
       if ( is_file($file) && is_readable($file) ) :
+        $this->lcp_output .= $file;
         $tplFileName = $file;
       endif;
     endforeach;
     
-    $this->lcp_output .= "not foreach";
 
     if($tplFileName){
       require($tplFileName);
