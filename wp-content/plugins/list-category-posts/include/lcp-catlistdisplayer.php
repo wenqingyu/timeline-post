@@ -47,7 +47,9 @@ class CatListDisplayer {
     } else {
       // Default:
               $this->lcp_output .= "test1";
-              $this->template();
+              require(TEMPLATEPATH . "/list-category-posts/templates/" . "default.php");
+              // $this->template();
+              
       // $this->build_output('ul');
     }
   }
@@ -66,7 +68,6 @@ class CatListDisplayer {
       $paths = self::getTemplatePaths();
       foreach($paths as $path){
         $templates[] = $path . $template_param . '.php';
-        $this->lcp_output .= "<h1>".$path."</h1>";
       }
     }
     $tplFileName = TEMPLATEPATH . "/list-category-posts/templates/" . "default.php";
