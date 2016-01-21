@@ -5,6 +5,7 @@
  * @author fernando@picandocodigo.net
  */
 require_once 'lcp-catlist.php';
+require_once TEMPLATEPATH . "/list-category-posts/" . "templates/customized.php";
 
 class CatListDisplayer {
   private $catlist;
@@ -61,9 +62,9 @@ class CatListDisplayer {
     // $template_param = $this->params['template'];
     // $templates = array();
     
-    $tplFileName = TEMPLATEPATH . "/list-category-posts/" . "templates/customized.php";
-    echo $tplFileName;
-    include($tplFileName);
+    // $tplFileName = TEMPLATEPATH . "/list-category-posts/" . "templates/customized.php";
+    // echo $tplFileName;
+    // include($tplFileName);
 
     // if($tplFileName){
     //   // $this->lcp_output .= "test22";
