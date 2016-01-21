@@ -12,7 +12,7 @@ class CatListDisplayer {
   private $lcp_output;
 
   public static function getTemplatePaths(){
-    $template_path = TEMPLATEPATH . "/list-category-posts/templates";
+    $template_path = TEMPLATEPATH . "/list-category-posts/";
     $stylesheet_path = STYLESHEETPATH . "/list-category-posts/";
     return array($template_path, $stylesheet_path);
   }
@@ -46,11 +46,7 @@ class CatListDisplayer {
       }
     } else {
       // Default:
-              $this->lcp_output .= "test1";
-              require(TEMPLATEPATH . "/list-category-posts/templates/" . "default.php");
-              // $this->template();
-              
-      // $this->build_output('ul');
+      $this->build_output('ul');
     }
   }
 
@@ -70,16 +66,13 @@ class CatListDisplayer {
         $templates[] = $path . $template_param . '.php';
       }
     }
-    $tplFileName = TEMPLATEPATH . "/list-category-posts/templates/" . "default.php";
+
     // Check if we can read the template file:
     foreach ($templates as $file) :
       if ( is_file($file) && is_readable($file) ) :
         $tplFileName = $file;
       endif;
     endforeach;
-    
-    $this->lcp_output .= "<h3>".$tplFileName."</h3>";
-    
 
     if($tplFileName){
       require($tplFileName);
@@ -115,8 +108,6 @@ class CatListDisplayer {
     $this->get_category_description();
 
     $this->lcp_output .= '<' . $tag;
-    
-    $this->lcp_output .= "haha";
 
     // Follow the numner of posts in an ordered list with pagination
     if( $tag == 'ol' && $this->catlist->get_page() > 1 ){
