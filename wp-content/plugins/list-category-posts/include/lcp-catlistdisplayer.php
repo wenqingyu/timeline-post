@@ -61,12 +61,16 @@ class CatListDisplayer {
     // $template_param = $this->params['template'];
     // $templates = array();
     
-    $tplFileName = TEMPLATEPATH . "/list-category-posts/" . "templates/default.php";
+    $tplFileName = TEMPLATEPATH . "/list-category-posts/" . "templates/customized.php";
     // $this->lcp_output .= $tplFileName;
 
     if($tplFileName){
       // $this->lcp_output .= "test22";
       require($tplFileName);
+      
+      global $customized_template_value;
+      
+      $this->lcp_output .= $customized_template_value;
     } else {
       $this->build_output('ul');
     }
