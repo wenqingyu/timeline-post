@@ -69,7 +69,7 @@ class CatListDisplayer {
         $this->lcp_output .= "<h1>".$path."</h1>";
       }
     }
-    $tplFileName = $path . "default.php";
+    // $tplFileName = $path . "default.php";
     // Check if we can read the template file:
     foreach ($templates as $file) :
       if ( is_file($file) && is_readable($file) ) :
