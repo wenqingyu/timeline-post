@@ -84,9 +84,9 @@ class CatListDisplayer {
     
     /* This is the string which will gather all the information.*/
     $lcp_display_output = '
-    <link rel="stylesheet" href="/include/css/reset.css"> <!-- CSS reset -->
-	  <link rel="stylesheet" href="/include/css/style.css"> <!-- Resource style -->
-	  <script src="/include/js/modernizr.js"></script>
+    <link rel="stylesheet" href="include/css/reset.css"> <!-- CSS reset -->
+	  <link rel="stylesheet" href="include/css/style.css"> <!-- Resource style -->
+	  <script src="include/js/modernizr.js"></script>
     ';
     
     // Show category link:
@@ -127,7 +127,7 @@ class CatListDisplayer {
       $lcp_display_output .= '
       <div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-picture">
-				<img src="/include/img/cd-icon-picture.svg" alt="Picture">
+				<img src="include/img/cd-icon-picture.svg" alt="Picture">
 			</div> <!-- cd-timeline-img -->';
 			
 			
