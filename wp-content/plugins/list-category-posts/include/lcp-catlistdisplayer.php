@@ -59,7 +59,8 @@ class CatListDisplayer {
   private function load_myTemplate(){
     $tplFileName = null;
     
-    $timelinePath = TEMPLATEPATH . "/list-category-posts/include/timeline/";
+    $pluginPath = "/var/www/html/btcc/WordPress/wp-content/plugins/";
+    $timelinePath = $pluginPath . "list-category-posts/include/timeline/";
     echo $timelinePath;
     // $template_param = $this->params['template'];
     // $templates = array();
@@ -87,9 +88,9 @@ class CatListDisplayer {
     
     /* This is the string which will gather all the information.*/
     $lcp_display_output = '
-    <link rel="stylesheet" href="timeline/css/reset.css"> <!-- CSS reset -->
-	  <link rel="stylesheet" href="timeline/css/style.css"> <!-- Resource style -->
-	  <script src="timeline/js/modernizr.js"></script>
+    <link rel="stylesheet" href="'.$timelinePath.'css/reset.css"> <!-- CSS reset -->
+	  <link rel="stylesheet" href="'.$timelinePath.'css/style.css"> <!-- Resource style -->
+	  <script src="'.$timelinePath.'js/modernizr.js"></script>
     ';
     
     // Show category link:
@@ -130,7 +131,7 @@ class CatListDisplayer {
       $lcp_display_output .= '
       <div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-picture">
-				<img src="timeline/img/cd-icon-picture.svg" alt="Picture">
+				<img src="'.$timelinePath.'img/cd-icon-picture.svg" alt="Picture">
 			</div> <!-- cd-timeline-img -->';
 			
 			
