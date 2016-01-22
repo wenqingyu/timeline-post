@@ -136,8 +136,11 @@ class CatListDisplayer {
 			
 			
 			// Content
+			$lcp_display_output .= '<div class="cd-timeline-content">';
+			// post title
 			$lcp_display_output .= $this->get_post_title($post, 'h2', 'lcp_post');
-			$lcp_display_output .= $this->get_modified_date($post);
+			// modified date 
+			$lcp_display_output .= '<span class="cd-date">'.$this->get_modified_date($post).'</span>';
 			$lcp_display_output .= $this->get_excerpt($post, 'div', 'lcp_excerpt');
 		// 	$lcp_display_output .= '<a href="'. $this->get_posts_morelink($post) .
 			                       // '" class="cd-read-more">Read more</a>';
@@ -146,11 +149,22 @@ class CatListDisplayer {
 
       // $lcp_display_output .= '<div class="cd-timeline-content">';
       
-      // $lcp_display_output .= '</div> <!-- cd-timeline-content -->';
+      $lcp_display_output .= '</div> <!-- cd-timeline-content -->';
       $lcp_display_output .= '</div> <!-- cd-timeline-block -->';
       
       
-      
+  //     <div class="cd-timeline-block">
+		// 	<div class="cd-timeline-img cd-picture">
+		// 		<img src="img/cd-icon-picture.svg" alt="Picture">
+		// 	</div> <!-- cd-timeline-img -->
+
+		// 	<div class="cd-timeline-content">
+		// 		<h2>Title of section 1</h2>
+		// 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+		// 		<a href="#0" class="cd-read-more">Read more</a>
+		// 		<span class="cd-date">Jan 14</span>
+		// 	</div> <!-- cd-timeline-content -->
+		// </div> <!-- cd-timeline-block -->
       
       
       
