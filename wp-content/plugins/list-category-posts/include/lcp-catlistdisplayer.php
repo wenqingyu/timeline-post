@@ -143,8 +143,8 @@ class CatListDisplayer {
 			$lcp_display_output .= '<span class="cd-date">'.$this->get_modified_date($post).'</span>';
 		  // author
 			$lcp_display_output .= '<span class="cd-date">'.$this->get_author($post).'</span>';
-			$lcp_display_output .= '<p>this is a test</p>';
-			$lcp_display_output .= '<p>'.$this->get_excerpt($post, 'div', 'lcp_excerpt')."</p>";
+		// 	$lcp_display_output .= '<p>this is a test</p>';
+			$lcp_display_output .= '$this->get_excerpt($post, 'p', 'lcp_excerpt')';
 		// 	$lcp_display_output .= '<a href="'. $this->get_posts_morelink($post) .
 			                       // '" class="cd-read-more">Read more</a>';
 		// 	$lcp_display_output .= '<span class="cd-date">' . $this->get_modified_date($post) . '</span>';
@@ -212,7 +212,7 @@ class CatListDisplayer {
     
       // // Get Posts "More" link:
       // $lcp_display_output .= $this->get_posts_morelink($post);
-    
+      
       // //Close li tag
       // $lcp_display_output .= '</li>';
     endwhile;
