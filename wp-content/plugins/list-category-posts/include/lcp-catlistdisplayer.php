@@ -199,7 +199,10 @@ class CatListDisplayer {
     endwhile;
     
     // Close the wrapper I opened at the beginning:
-    $lcp_display_output .= '</ul>';
+    $lcp_display_output .= '</section> <!-- cd-timeline -->';
+    
+    $lcp_display_output .= '<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script>';
     
     // If there's a "more link", show it:
     $lcp_display_output .= $this->get_morelink();
