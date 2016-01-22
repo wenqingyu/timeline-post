@@ -136,7 +136,7 @@ class CatListDisplayer {
 			
 			
 			// Content
-			a$lcp_display_output .= '
+			$lcp_display_output .= '
 			<div class="cd-timeline-content">
 				'. $this->get_post_title($post, 'h2', 'lcp_post') .'
 				'. $this->get_modified_date($post) .'
