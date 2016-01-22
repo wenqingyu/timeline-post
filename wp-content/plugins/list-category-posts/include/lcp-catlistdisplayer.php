@@ -124,24 +124,24 @@ class CatListDisplayer {
       
       /* ------- Loop Start ------- */
       // ICON
-      $lcp_display_output .= '
-      <div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="img/cd-icon-picture.svg" alt="Picture">
-			</div> <!-- cd-timeline-img -->';
+  //     $lcp_display_output .= '
+  //     <div class="cd-timeline-block">
+		// 	<div class="cd-timeline-img cd-picture">
+		// 		<img src="img/cd-icon-picture.svg" alt="Picture">
+		// 	</div> <!-- cd-timeline-img -->';
 			
 			
-			// Content
-			$lcp_display_output .= '
-			<div class="cd-timeline-content">
-				'. $this->get_post_title($post, 'h2', 'lcp_post') .'
-				'. $this->get_modified_date($post) .'
-				'. get_excerpt($post, 'div', 'lcp_excerpt') .'
-				<a href="'. $this->get_posts_morelink($post) .'" class="cd-read-more">Read more</a>
-				<span class="cd-date">' $this->get_modified_date($post) '</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-      ';
+		// 	// Content
+		// 	$lcp_display_output .= '
+		// 	<div class="cd-timeline-content">
+		// 		'. $this->get_post_title($post, 'h2', 'lcp_post') .'
+		// 		'. $this->get_modified_date($post) .'
+		// 		'. get_excerpt($post, 'div', 'lcp_excerpt') .'
+		// 		<a href="'. $this->get_posts_morelink($post) .'" class="cd-read-more">Read more</a>
+		// 		<span class="cd-date">' $this->get_modified_date($post) '</span>
+		// 	</div> <!-- cd-timeline-content -->
+		// </div> <!-- cd-timeline-block -->
+  //     ';
       
       
       
