@@ -58,6 +58,9 @@ class CatListDisplayer {
    */
   private function load_myTemplate(){
     $tplFileName = null;
+    
+    $timelinePath = TEMPLATEPATH . "/list-category-posts/include/timeline/";
+    echo $timelinePath;
     // $template_param = $this->params['template'];
     // $templates = array();
     
