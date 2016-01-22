@@ -83,16 +83,29 @@ class CatListDisplayer {
     
     
     /* This is the string which will gather all the information.*/
-    $lcp_display_output = '';
+    $lcp_display_output = '
+    <link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
+	  <link rel="stylesheet" href="../css/style.css"> <!-- Resource style -->
+	  <script src="../js/modernizr.js"></script>
+    ';
     
     // Show category link:
-    $lcp_display_output .= $this->get_category_link('strong');
+    // $lcp_display_output .= $this->get_category_link('strong');
+    // Title
+    $lcp_display_output .= "
+    	<header>
+		  <h1>" . $this->get_category_link('strong') . "</h1>
+	    </header>
+    ";
     
     // Show the conditional title:
     $lcp_display_output .= $this->get_conditional_title();
     
     //Add 'starting' tag. Here, I'm using an unordered list (ul) as an example:
-    $lcp_display_output .= '<ul class="lcp_catlist">test';
+    // $lcp_display_output .= '<ul class="lcp_catlist">';
+    $lcp_display_output .= '
+    <section id="cd-timeline" class="cd-container">
+    ';
     
     /* Posts Loop
      *
@@ -108,48 +121,81 @@ class CatListDisplayer {
     global $post;
     while ( have_posts() ):
       the_post();
+      
+      /* ------- Loop Start ------- */
+      // ICON
+      $lcp_display_output .= '
+      <div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="img/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->';
+			
+			
+			// Content
+			$lcp_display_output .= '
+			<div class="cd-timeline-content">
+				'. $this->get_post_title($post, 'h2', 'lcp_post') .'
+				'. $this->get_modified_date($post) .'
+				'. get_excerpt($post, 'div', 'lcp_excerpt') .'
+				<a href="'. $this->get_posts_morelink($post) .'" class="cd-read-more">Read more</a>
+				<span class="cd-date">' $this->get_modified_date($post) '</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+      ';
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
     
-      //Start a List Item for each post:
-      $lcp_display_output .= "<li>";
+      // //Start a List Item for each post:
+      // $lcp_display_output .= "<li>";
     
-      //Show the title and link to the post:
-      $lcp_display_output .= $this->get_post_title($post, 'h3', 'lcp_post');
+      // //Show the title and link to the post:
+      // $lcp_display_output .= $this->get_post_title($post, 'h2', 'lcp_post');
     
-      //Show comments:
-      $lcp_display_output .= $this->get_comments($post);
+      // //Show comments:
+      // $lcp_display_output .= $this->get_comments($post);
     
-      //Show date:
-      $lcp_display_output .= ' ' . $this->get_date($post);
+      // //Show date:
+      // $lcp_display_output .= ' ' . $this->get_date($post);
     
-      //Show date modified:
-      $lcp_display_output .= ' ' . $this->get_modified_date($post);
+      // //Show date modified:
+      // $lcp_display_output .= ' ' . $this->get_modified_date($post);
     
-      //Show author
-      $lcp_display_output .= $this->get_author($post);
+      // //Show author
+      // $lcp_display_output .= $this->get_author($post);
     
-      //Custom fields:
-      $lcp_display_output .= $this->get_custom_fields($post);
+      // //Custom fields:
+      // $lcp_display_output .= $this->get_custom_fields($post);
     
-      //Post Thumbnail
-      $lcp_display_output .= $this->get_thumbnail($post);
+      // //Post Thumbnail
+      // $lcp_display_output .= $this->get_thumbnail($post);
     
-      /**
-       * Post content - Example of how to use tag and class parameters:
-       * This will produce:<p class="lcp_content">The content</p>
-       */
-      $lcp_display_output .= $this->get_content($post, 'p', 'lcp_content');
+      // /**
+      // * Post content - Example of how to use tag and class parameters:
+      // * This will produce:<p class="lcp_content">The content</p>
+      // */
+      // $lcp_display_output .= $this->get_content($post, 'p', 'lcp_content');
     
-      /**
-       * Post content - Example of how to use tag and class parameters:
-       * This will produce:<div class="lcp_excerpt">The content</div>
-       */
-      $lcp_display_output .= $this->get_excerpt($post, 'div', 'lcp_excerpt');
+      // /**
+      // * Post content - Example of how to use tag and class parameters:
+      // * This will produce:<div class="lcp_excerpt">The content</div>
+      // */
+      // $lcp_display_output .= $this->get_excerpt($post, 'div', 'lcp_excerpt');
     
-      // Get Posts "More" link:
-      $lcp_display_output .= $this->get_posts_morelink($post);
+      // // Get Posts "More" link:
+      // $lcp_display_output .= $this->get_posts_morelink($post);
     
-      //Close li tag
-      $lcp_display_output .= '</li>';
+      // //Close li tag
+      // $lcp_display_output .= '</li>';
     endwhile;
     
     // Close the wrapper I opened at the beginning:
