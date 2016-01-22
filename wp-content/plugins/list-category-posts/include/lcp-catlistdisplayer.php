@@ -139,7 +139,7 @@ class CatListDisplayer {
 			$lcp_display_output .= '<div class="cd-timeline-content">';
 			// post title
 		
-			$lcp_display_output .= '	<a href="'. $this->get_posts_morelink($post) .'>'.$this->get_post_title($post, 'h2', 'lcp_post').'</a>';
+			$lcp_display_output .= '<h2><a href="'. $this->get_posts_morelink($post) .'>'.$this->get_post_title($post, 'h2', 'lcp_post').'</a></h2>';
 			// modified date 
 			$lcp_display_output .= '<span class="cd-date">'.$this->get_modified_date($post).'</span>';
 			$lcp_display_output .= $this->get_excerpt($post, 'div', 'lcp_excerpt');
