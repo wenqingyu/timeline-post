@@ -59,7 +59,7 @@ class CatListDisplayer {
   private function load_myTemplate(){
     $tplFileName = null;
     
-    $pluginPath = "/var/www/html/btcc/WordPress/wp-content/plugins/";
+    $pluginPath = "/btcc/WordPress/wp-content/plugins/";
     $timelinePath = $pluginPath . "list-category-posts/include/timeline/";
     echo $timelinePath;
     // $template_param = $this->params['template'];
