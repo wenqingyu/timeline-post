@@ -89,9 +89,11 @@ class CatListDisplayer {
     /* This is the string which will gather all the information.*/
     $lcp_display_output = '
     <link rel="stylesheet" href="'.$timelinePath.'css/reset.css"> <!-- CSS reset -->
-	  <link rel="stylesheet" href="'.$timelinePath.'css/style.css"> <!-- Resource style -->
 	  <script src="'.$timelinePath.'js/modernizr.js"></script>
     ';
+    
+    // $lcp_display_output .= '<link rel="stylesheet" href="'.$timelinePath.'css/style.css"> <!-- Resource style -->';
+    
     
     // Show category link:
     // $lcp_display_output .= $this->get_category_link('strong');
