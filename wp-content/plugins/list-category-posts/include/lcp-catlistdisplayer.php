@@ -138,7 +138,7 @@ class CatListDisplayer {
 			// Content
 			$lcp_display_output .= $this->get_post_title($post, 'h2', 'lcp_post');
 			$lcp_display_output .= $this->get_modified_date($post);
-		// 	$lcp_display_output .= $this->get_modified_date($post)
+			$lcp_display_output .= $this->get_modified_date($post)
 		// 	$lcp_display_output .= get_excerpt($post, 'div', 'lcp_excerpt');
 		// 	$lcp_display_output .= '<a href="'. $this->get_posts_morelink($post) .
 		// 	                        '" class="cd-read-more">Read more</a>';
