@@ -88,7 +88,7 @@ class CatListDisplayer {
     
     /* This is the string which will gather all the information.*/
     $lcp_display_output = '<script src="'.$timelinePath.'js/modernizr.js"></script>';
-    // $lcp_display_output .= '<link rel="stylesheet" href="'.$timelinePath.'css/reset.css"> <!-- CSS reset -->';
+    $lcp_display_output .= '<link rel="stylesheet" href="'.$timelinePath.'css/reset.css"> <!-- CSS reset -->';
     $lcp_display_output .= '<link rel="stylesheet" href="'.$timelinePath.'css/style.css"> <!-- Resource style -->';
     
     
@@ -141,6 +141,8 @@ class CatListDisplayer {
 			$lcp_display_output .= '<h2><a href="'. $this->get_posts_morelink($post) .'">'.$this->get_post_title($post, 'h2', 'lcp_post').'</a></h2>';
 			// modified date 
 			$lcp_display_output .= '<span class="cd-date">'.$this->get_modified_date($post).'</span>';
+		  // author
+			$lcp_display_output .= '<span class="cd-date">'.$this->get_author($post).'</span>';
 			$lcp_display_output .= '<p>'.$this->get_excerpt($post, 'div', 'lcp_excerpt')."</p>";
 		// 	$lcp_display_output .= '<a href="'. $this->get_posts_morelink($post) .
 			                       // '" class="cd-read-more">Read more</a>';

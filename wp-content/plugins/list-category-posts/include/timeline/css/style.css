@@ -14,12 +14,12 @@ html * {
   box-sizing: border-box;
 }
 
-body {
-  font-size: 100%;
-  font-family: "Droid Serif", serif;
-  color: #7f8c97;
-  background-color: #e9f0f5;
-}
+/*body {*/
+/*  font-size: 100%;*/
+/*  font-family: "Droid Serif", serif;*/
+/*  color: #7f8c97;*/
+/*  background-color: #e9f0f5;*/
+/*}*/
 
 a {
   color: #acb7c0;
@@ -31,10 +31,10 @@ img {
   max-width: 100%;
 }
 
-h1, h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-}
+/*h1, h2 {*/
+/*  font-family: "Open Sans", sans-serif;*/
+/*  font-weight: bold;*/
+/*}*/
 
 /* -------------------------------- 
 
