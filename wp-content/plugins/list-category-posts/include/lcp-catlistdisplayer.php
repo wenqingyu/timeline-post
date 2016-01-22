@@ -124,11 +124,11 @@ class CatListDisplayer {
       
       /* ------- Loop Start ------- */
       // ICON
-  //     $lcp_display_output .= '
-  //     <div class="cd-timeline-block">
-		// 	<div class="cd-timeline-img cd-picture">
-		// 		<img src="img/cd-icon-picture.svg" alt="Picture">
-		// 	</div> <!-- cd-timeline-img -->';
+      $lcp_display_output .= '
+      <div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="img/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->';
 			
 			
 		// 	// Content
