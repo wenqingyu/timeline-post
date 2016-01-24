@@ -23,9 +23,10 @@ get_header(); ?>
 				<?php endif; ?>
 			
 			<!--timeline include 	-->
-			<!--<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->-->
-			<!--<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->-->
-			<!--<script src="js/modernizr.js"></script> <!-- Modernizr -->-->
+			<?php $timePath = "/var/www/html/btcc/WordPress/wp-content/themes/twentythirteen/timeline/";?>
+			<link rel="stylesheet" href="<?php echo $timePath;?>css/reset.css"> <!-- CSS reset -->
+			<link rel="stylesheet" href="<?php echo $timePath;?>css/style.css"> <!-- Resource style -->
+			<script src="<?php echo $timePath;?>js/modernizr.js"></script> <!-- Modernizr -->
 		  		
 			</header><!-- .archive-header -->
 
@@ -41,8 +42,8 @@ get_header(); ?>
 			<?php endwhile; ?>
 			</section> <!-- cd-timeline -->
 			<!--timeline include-->
-			<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
-			<!--<script src="js/main.js"></script> <!-- Resource jQuery -->-->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<script src="js/main.js"></script> <!-- Resource jQuery -->
 			
 			
 
