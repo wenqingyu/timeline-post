@@ -21,13 +21,30 @@ get_header(); ?>
 				<?php if ( category_description() ) : // Show an optional category description ?>
 				<div class="archive-meta"><?php echo category_description(); ?></div>
 				<?php endif; ?>
+			
+			<!--timeline include 	-->
+			<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+			<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+			<script src="js/modernizr.js"></script> <!-- Modernizr -->
+		  		
 			</header><!-- .archive-header -->
 
+
+
+			<section id="cd-timeline" class="cd-container">
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-			<div> test </div>
-				<?php get_template_part( 'content', get_post_format() ); ?>
+			
+				<?php get_template_part( 'content-timeline', get_post_format() ); ?>
+				<?php // get_template_part( 'content', get_post_format() ); ?>
+				
 			<?php endwhile; ?>
+			</section> <!-- cd-timeline -->
+			<!--timeline include-->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<script src="js/main.js"></script> <!-- Resource jQuery -->
+			
+			
 
 			<?php twentythirteen_paging_nav(); ?>
 
