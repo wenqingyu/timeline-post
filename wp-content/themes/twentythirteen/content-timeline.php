@@ -9,6 +9,9 @@
  * @since Twenty Thirteen 1.0
  */
 ?>
+<?php
+global $timePath;
+?>
 
 <div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-picture">
