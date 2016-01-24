@@ -23,7 +23,7 @@ get_header(); ?>
 				<?php endif; ?>
 			
 			<!--timeline include 	-->
-			<?php $timePath = "/var/www/html/btcc/WordPress/wp-content/themes/twentythirteen/timeline/";?>
+			<?php $timePath = "/btcc/WordPress/wp-content/themes/twentythirteen/timeline/";?>
 			<link rel="stylesheet" href="<?php echo $timePath;?>css/reset.css"> <!-- CSS reset -->
 			<link rel="stylesheet" href="<?php echo $timePath;?>css/style.css"> <!-- Resource style -->
 			<script src="<?php echo $timePath;?>js/modernizr.js"></script> <!-- Modernizr -->
