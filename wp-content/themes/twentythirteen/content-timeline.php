@@ -52,7 +52,7 @@ $postType = $tag->slug;
 				<h2><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 				<p><?php the_excerpt(); ?></p>
 				<a href="<?php the_permalink(); ?>" class="cd-read-more">Read more</a>
-				<span class="cd-date"><b>Published: </b><?php echo get_post_time('F j, Y G:i a', the_ID()); ?>
+				<span class="cd-date"><b>Published: </b><?php echo get_post_time('F j, Y G:i a'); ?>
 				</span>
 				
 			
