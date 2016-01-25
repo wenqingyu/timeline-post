@@ -10,18 +10,24 @@
  */
 ?>
 <?php
-global $timePath;
+global $timelinePath;
+?>
+
+<?php 
+$locationIcon = "img/cd-icon-location.svg";
+$movieIcon = "img/cd-icon-movie.svg";
+$pictureIcon = "img/cd-icon-picture.svg";
 ?>
 
 <div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-picture">
-				<img src="<?php echo $timePath;?>img/cd-icon-picture.svg" alt="Picture">
+				<img src="<?php echo $timelinePath.$locationIcon;?>" alt="Picture">
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
-				<h2>Title of section 1</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
+				<h2><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+				<p><?php the_excerpt(); ?></p>
+				<a href="<?php the_permalink(); ?>" class="cd-read-more">Read more</a>
 				<span class="cd-date">Jan 14</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->

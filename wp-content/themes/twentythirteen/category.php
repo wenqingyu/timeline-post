@@ -23,10 +23,10 @@ get_header(); ?>
 				<?php endif; ?>
 			
 			<!--timeline include 	-->
-			<?php $timePath = "/btcc/WordPress/wp-content/themes/twentythirteen/timeline/";?>
-			<link rel="stylesheet" href="<?php echo $timePath;?>css/reset.css"> <!-- CSS reset -->
-			<link rel="stylesheet" href="<?php echo $timePath;?>css/style.css"> <!-- Resource style -->
-			<script src="<?php echo $timePath;?>js/modernizr.js"></script> <!-- Modernizr -->
+			<?php $timelinePath = "/btcc/WordPress/wp-content/themes/twentythirteen/timeline/";?>
+			<link rel="stylesheet" href="<?php echo $timelinePath;?>css/reset.css"> <!-- CSS reset -->
+			<link rel="stylesheet" href="<?php echo $timelinePath;?>css/style.css"> <!-- Resource style -->
+			<script src="<?php echo $timelinePath;?>js/modernizr.js"></script> <!-- Modernizr -->
 		  		
 			</header><!-- .archive-header -->
 
@@ -43,7 +43,7 @@ get_header(); ?>
 			</section> <!-- cd-timeline -->
 			<!--timeline include-->
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-			<script src="<?php echo $timePath;?>js/main.js"></script> <!-- Resource jQuery -->
+			<script src="<?php echo $timelinePath;?>js/main.js"></script> <!-- Resource jQuery -->
 			
 			
 
