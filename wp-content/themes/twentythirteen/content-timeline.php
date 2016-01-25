@@ -22,18 +22,18 @@ $cbc_data_review_icon = "";
 
 // key: tags->slug, value: Icon address
 $type2icon = array(
-	"cbc-data-report" => $cbc_data_report_icon;
-	"cbc-feedback" => $cbc_feedback_icon;
-	"cbc-plan" => $cbc_plan_icon;
-	"cbc-progress" => $cbc_progress_icon;
-	"cbc_data_review" => $cbc_data_review_icon;
+	"cbc-data-report" => $cbc_data_report_icon,
+	"cbc-feedback" => $cbc_feedback_icon,
+	"cbc-plan" => $cbc_plan_icon,
+	"cbc-progress" => $cbc_progress_icon,
+	"cbc_data_review" => $cbc_data_review_icon,
 );
 
 
 
 // category idenfication
 $tags = get_the_tags();
-// print_r($tags->slug);
+print_r($tags->slug);
 $postType = $tags->slug;
 echo $postType;
 
