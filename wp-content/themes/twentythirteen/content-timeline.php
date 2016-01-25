@@ -50,12 +50,13 @@ $postType = $tag->slug;
 
 			<div class="cd-timeline-content">
 				<h2><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-				<p></p>
 				<p><?php the_excerpt(); ?></p>
 				<a href="<?php the_permalink(); ?>" class="cd-read-more">Read more</a>
-				<span class="cd-date">Published: <?php echo get_post_time('F j, Y G:i a', the_ID()); ?></br>
-				Last Modified: <?php echo the_modified_time('F j, Y G:i a', the_ID()); ?>
+				<span class="cd-date"><b>Published: </b><?php echo get_post_time('F j, Y G:i a', the_ID()); ?>
 				</span>
+				
+			
+				<!--Last Modified: <?php // echo the_modified_time('F j, Y G:i a', the_ID()); ?>-->
 				
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
