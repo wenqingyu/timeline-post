@@ -25,11 +25,9 @@ foreach($post_categories as $c){
 	$cat = get_category( $c );
 	$cats[] = array( 'name' => $cat->name, 'slug' => $cat->slug );
 	// map category
+	echo $cat->name. "</br>";
 }
-
-print_r($cats);
-				
-				
+			
 
 ?>
 
