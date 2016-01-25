@@ -12,7 +12,7 @@
 <?php global $timelinePath; ?>
 
 <?php 
-$cbc_data_report_icon = "img/icon-cbc-data-report.png";
+$cbc_data_report_icon = "img/icon-cbc-data-report.svg";
 $cbc_feedback_icon = "img/icon-cbc-feedback.svg";
 $cbc_plan_icon = "img/icon-cbc-plan.svg";
 $cbc_progress_icon = "img/icon-cbc-progress.svg";
@@ -53,6 +53,7 @@ $postType = $tag->slug;
 				<p></p>
 				<p><?php the_excerpt(); ?></p>
 				<a href="<?php the_permalink(); ?>" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 14</span>
+				<span class="cd-date">Published: <?php get_the_time('F j, Y G:i a', the_ID()); ?></span>
+				<span class="cd-date">Last Modified: <?php the_modified_time('F j, Y G:i a', the_ID()); ?></span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
