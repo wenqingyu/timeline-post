@@ -12,7 +12,7 @@
 <?php global $timelinePath; ?>
 
 <?php 
-$cbc_data_report_icon = "img/cd-icon-location.svg";
+$cbc_data_report_icon = "img/cd-icon-data-report.png";
 $cbc_feedback_icon = "img/cd-icon-movie.svg";
 $cbc_plan_icon = "img/cd-icon-picture.svg";
 $cbc_progress_icon = "img/cd-icon-moive.svg";
