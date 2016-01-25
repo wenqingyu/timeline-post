@@ -53,8 +53,8 @@ $postType = $tag->slug;
 				<p></p>
 				<p><?php the_excerpt(); ?></p>
 				<a href="<?php the_permalink(); ?>" class="cd-read-more">Read more</a>
-				<span class="cd-date">Published: <?php get_post_time('F j, Y G:i a', the_ID()); ?></br>
-				Last Modified: <?php the_modified_time('F j, Y G:i a', the_ID()); ?>
+				<span class="cd-date">Published: <?php echo get_post_time('F j, Y G:i a', the_ID()); ?></br>
+				Last Modified: <?php echo the_modified_time('F j, Y G:i a', the_ID()); ?>
 				</span>
 				
 			</div> <!-- cd-timeline-content -->
