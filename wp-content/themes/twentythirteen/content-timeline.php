@@ -26,7 +26,12 @@ $pictureIcon = "img/cd-icon-picture.svg";
 
 			<div class="cd-timeline-content">
 				<h2><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-				<p><?php print_r(get_post_types()); ?></p>
+				<p><?php 
+					$post_categories = wp_get_post_categories( the_ID(); );
+					print_r($post_categories);
+				
+				
+				 ?></p>
 				<p><?php the_excerpt(); ?></p>
 				<a href="<?php the_permalink(); ?>" class="cd-read-more">Read more</a>
 				<span class="cd-date">Jan 14</span>
