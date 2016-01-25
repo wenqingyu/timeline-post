@@ -12,15 +12,17 @@
 <?php global $timelinePath; ?>
 
 <?php 
-$cbc_data_report_icon = "img/cd-icon-data-report.png";
-$cbc_feedback_icon = "img/cd-icon-movie.svg";
-$cbc_plan_icon = "img/cd-icon-picture.svg";
-$cbc_progress_icon = "img/cd-icon-moive.svg";
-$cbc_data_review_icon = "img/cd-icon-picture.svg";
+$cbc_data_report_icon = "img/icon-cbc-data-report.png";
+$cbc_feedback_icon = "img/icon-cbc-feedback.svg";
+$cbc_plan_icon = "img/icon-cbc-plan.svg";
+$cbc_progress_icon = "img/icon-cbc-progress.svg";
+$cbc_data_review_icon = "img/icon-cbc-data-review.svg";
+
 
 
 
 // key: tags->slug, value: Icon address
+// Orange -> blue -> yellow -> gray -> green
 $type2icon = array(
 	"cbc-data-report" => $cbc_data_report_icon,
 	"cbc-feedback" => $cbc_feedback_icon,
