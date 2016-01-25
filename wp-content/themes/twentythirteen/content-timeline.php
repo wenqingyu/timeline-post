@@ -18,7 +18,7 @@ $pictureIcon = "img/cd-icon-picture.svg";
 
 // category idenfication
 $tags = get_the_tags();
-print_r($tags);
+print_r($tags->name);
 
 
 ?>
