@@ -34,7 +34,7 @@ $type2icon = array(
 // category idenfication
 $tags = get_the_tags();
 print_r($tags);
-$postType = $tags->slug;
+$postType = $tags[0]->slug;
 echo $postType;
 
 
