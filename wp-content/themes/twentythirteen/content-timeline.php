@@ -27,7 +27,7 @@ $pictureIcon = "img/cd-icon-picture.svg";
 			<div class="cd-timeline-content">
 				<h2><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 				<p><?php 
-					$post_categories = wp_get_post_categories( the_ID(); );
+					$post_categories = wp_get_post_categories( the_ID() );
 					print_r($post_categories);
 				
 				
