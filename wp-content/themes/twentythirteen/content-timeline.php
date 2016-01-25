@@ -12,20 +12,37 @@
 <?php global $timelinePath; ?>
 
 <?php 
-$locationIcon = "img/cd-icon-location.svg";
-$movieIcon = "img/cd-icon-movie.svg";
-$pictureIcon = "img/cd-icon-picture.svg";
+$cbc_data_report_icon = "img/cd-icon-location.svg";
+$cbc_feedback_icon = "img/cd-icon-movie.svg";
+$cbc_plan_icon = "img/cd-icon-picture.svg";
+$cbc_progress_icon = "";
+$cbc_data_review_icon = "";
+
+
+
+// key: tags->slug, value: Icon address
+$type2icon = array(
+	"cbc-data-report" => $cbc_data_report_icon;
+	"cbc-feedback" => $cbc_feedback_icon;
+	"cbc-plan" => $cbc_plan_icon;
+	"cbc-progress" => $cbc_progress_icon;
+	"cbc_data_review" => $cbc_data_review_icon;
+);
+
+
 
 // category idenfication
 $tags = get_the_tags();
-print_r($tags->name);
+// print_r($tags->slug);
+$postType = $tags->slug;
+echo $postType;
 
 
 ?>
 
 <div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-picture">
-				<img src="<?php echo $timelinePath.$locationIcon;?>" alt="Picture">
+				<img src="<?php echo $timelinePath.$type2icon[$postType];?>" alt="Picture">
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
