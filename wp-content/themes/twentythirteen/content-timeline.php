@@ -36,7 +36,7 @@ $tags = get_the_tags();
 // print_r($tags);
 $tag = $tags[0];
 $postType = $tag->slug;
-echo $postType;
+// echo $postType;
 
 
 ?>
