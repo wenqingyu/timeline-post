@@ -15,7 +15,7 @@
 $cbc_data_report_icon = "img/cd-icon-location.svg";
 $cbc_feedback_icon = "img/cd-icon-movie.svg";
 $cbc_plan_icon = "img/cd-icon-picture.svg";
-$cbc_progress_icon = "img/cd-icon-test.svg";
+$cbc_progress_icon = "img/cd-icon-moive.svg";
 $cbc_data_review_icon = "img/cd-icon-picture.svg";
 
 
