@@ -15,8 +15,8 @@
 $cbc_data_report_icon = "img/cd-icon-location.svg";
 $cbc_feedback_icon = "img/cd-icon-movie.svg";
 $cbc_plan_icon = "img/cd-icon-picture.svg";
-$cbc_progress_icon = "";
-$cbc_data_review_icon = "";
+$cbc_progress_icon = "img/cd-icon-picture.svg";
+$cbc_data_review_icon = "img/cd-icon-picture.svg";
 
 
 
@@ -26,7 +26,7 @@ $type2icon = array(
 	"cbc-feedback" => $cbc_feedback_icon,
 	"cbc-plan" => $cbc_plan_icon,
 	"cbc-progress" => $cbc_progress_icon,
-	"cbc_data_review" => $cbc_data_review_icon,
+	"cbc-data-review" => $cbc_data_review_icon,
 );
 
 
