@@ -17,17 +17,9 @@ $movieIcon = "img/cd-icon-movie.svg";
 $pictureIcon = "img/cd-icon-picture.svg";
 
 // category idenfication
-$category = "";
-$post_categories = wp_get_post_categories( the_ID() );
-print_r($post_categories);
-$cats = array();
-foreach($post_categories as $c){
-	$cat = get_category( $c );
-	$cats[] = array( 'name' => $cat->name, 'slug' => $cat->slug );
-	// map category
-	echo $cat->name. "</br>";
-}
-			
+$tags = get_the_tags();
+print_r($tags);
+
 
 ?>
 
